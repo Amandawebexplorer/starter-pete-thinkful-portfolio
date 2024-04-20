@@ -8,71 +8,59 @@ body {
   padding: 40px;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
-/* Header */
+/* Header Styles */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003049;
+  color: white;
+  padding: 10px 20px;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+.logo-text {
+  font-size: 1.5em;
 }
 
-article {
-  padding: 50px 0;
+nav {
+  display: flex;
+  gap: 20px;
 }
 
-article div {
-  text-align: center;
-  width: 100%;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.5;
-}
-
-/* Links */
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+/* About Section Styles */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
+/* Portfolio Section Styles */
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-/* Other page elements */
-hr {
-  border: 1px solid black;
+#portfolio section {
+  flex-basis: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#portfolio h3 {
+  font-size: 1.2em;
+}
+
+#portfolio p {
+  font-size: 14px;
 }
