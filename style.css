@@ -49,12 +49,14 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px; /* Added for spacing between items */
+  margin: 0 -20px; /* Compensate for body padding */
 }
 
 #portfolio section {
-  flex-basis: calc(33.33% - 20px); /* Adjusted to fit three items in a row with spacing */
+  flex: 0 0 calc(33.33% - 40px); /* Adjusted to fit three items in a row with spacing and body padding */
   padding: 20px;
   border: 1px solid #ccc;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 #portfolio h3 {
@@ -63,4 +65,3 @@ nav {
 
 #portfolio p {
   font-size: 14px;
-}
