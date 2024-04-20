@@ -47,12 +47,12 @@ nav {
 #portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-around;
+  gap: 20px; /* Added for spacing between items */
 }
 
 #portfolio section {
-  flex-basis: 30%;
+  flex-basis: calc(33.33% - 20px); /* Adjusted to fit three items in a row with spacing */
   padding: 20px;
   border: 1px solid #ccc;
 }
