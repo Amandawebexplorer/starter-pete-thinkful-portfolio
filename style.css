@@ -5,7 +5,8 @@ body {
   background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header Styles */
@@ -25,6 +26,7 @@ header {
 nav {
   display: flex;
   gap: 20px;
+  align-items: center; /* Align items vertically */
 }
 
 /* About Section Styles */
@@ -53,7 +55,7 @@ nav {
 }
 
 #portfolio section {
-  flex: 0 0 calc(33.33% - 40px); /* Adjusted to fit three items in a row with spacing and body padding */
+  flex: 1 1 calc(25% - 40px); /* Adjusted to fit four items in a row with spacing and body padding */
   padding: 20px;
   border: 1px solid #ccc;
   box-sizing: border-box; /* Include padding in width calculation */
@@ -65,3 +67,4 @@ nav {
 
 #portfolio p {
   font-size: 14px;
+}
