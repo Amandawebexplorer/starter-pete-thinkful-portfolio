@@ -1,21 +1,30 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+/* Global styles */
 body {
   background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0;
   margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header Styles */
 header {
+  background-color: #003049;
+  color: white;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003049;
-  color: white;
   padding: 10px 20px;
 }
 
@@ -26,7 +35,6 @@ header {
 nav {
   display: flex;
   gap: 20px;
-  align-items: center; /* Align items vertically */
 }
 
 /* About Section Styles */
@@ -37,34 +45,65 @@ nav {
   padding: 20px;
 }
 
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.image-container {
+  text-align: center;
+}
+
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.text-content {
+  flex-grow: 1;
+}
+
+.text-content h3 {
+  text-align: center;
 }
 
 /* Portfolio Section Styles */
 #portfolio {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px; /* Added for spacing between items */
-  margin: 0 -20px; /* Compensate for body padding */
-}
-
-#portfolio section {
-  flex: 1 1 calc(25% - 40px); /* Adjusted to fit four items in a row with spacing and body padding */
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
-  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-#portfolio h3 {
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  flex: 0 0 calc(25% - 20px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+}
+
+.portfolio-item h3 {
   font-size: 1.2em;
 }
 
-#portfolio p {
+.portfolio-item p {
   font-size: 14px;
 }
