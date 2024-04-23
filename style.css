@@ -1,31 +1,35 @@
-/* Import fonts */
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line. */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* Global styles */
 body {
   background-color: #eae2b7;
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+a {
+  color: #d62828;
+  text-decoration: none;
 }
 
-/* Header Styles */
+a:hover {
+  color: #f77f00;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  text-align: center;
+}
+
+/* Redesigned Header */
 header {
   background-color: #003049;
   color: white;
-}
-
-.header-container {
+  padding: 10px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  justify-content: space-between; /* Horizontally align the logo text and navigation */
+  align-items: center; /* Vertically center content */
 }
 
 .logo-text {
@@ -37,73 +41,70 @@ nav {
   gap: 20px;
 }
 
-/* About Section Styles */
-#about {
+/* Updated About Section Styles */
+#About {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Horizontally center the content */
+  text-align: center; /* Horizontally center text within sections */
   padding: 20px;
-}
-
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 800px;
-}
-
-.image-container {
-  text-align: center;
 }
 
 .image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border: 2px solid #003049; /* Border color */
+  border-radius: 50%; /* Make the image completely round */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
-.text-content {
-  flex-grow: 1;
-}
-
-.text-content h3 {
+/* Redesigned Portfolio Section Styles */
+h4 {
+  font-size: 1.8em;
   text-align: center;
 }
 
-/* Portfolio Section Styles */
 #portfolio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center items with space around them */
+  gap: 20px; /* Add spacing between items */
+}
+
+#portfolio section {
+  flex: 0 0 calc(33.33% - 40px); /* Adjusted to fit three items in a row with spacing */
   padding: 20px;
-}
-
-.portfolio-items {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin-top: 20px;
-}
-
-.portfolio-item {
-  flex: 0 0 calc(25% - 20px);
   border: 1px solid #ccc;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.portfolio-item img {
-  max-width: 100%;
-}
-
-.portfolio-item h3 {
+#portfolio h3 {
   font-size: 1.2em;
 }
 
-.portfolio-item p {
-  font-size: 14px;
+#portfolio p {
+  font-size: 14px; /* Set project descriptions font size to 14px */
+}
+
+/* Contact Section Styles */
+h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Additional Styles */
+nav {
+  text-align: center;
+  background-color: #003049;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
