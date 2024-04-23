@@ -1,4 +1,4 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
@@ -17,22 +17,27 @@ a:hover {
   color: #f77f00;
 }
 
-/* Header Styles */
+/* Header and Footer Styles */
+header, footer {
+  text-align: center;
+}
+
 header {
   background-color: #003049;
   color: white;
   padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.logo-text {
-  font-size: 1.5em;
+h1 {
+  font-size: 2em;
+  text-align: left;
+  margin-left: 20px;
 }
 
 nav {
-  display: flex;
+  text-align: center;
+  background-color: #003049;
+  padding: 10px 0;
 }
 
 nav a {
@@ -47,19 +52,17 @@ nav a:hover {
 /* About Section Styles */
 #About {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontally center the content */
-  text-align: center; /* Horizontally center text within sections */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
 }
 
-.image-circle {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  border: 2px solid #003049; /* Border color */
-  border-radius: 50%; /* Make the image completely round */
-  display: block;
-  margin-bottom: 10px; /* Add margin below the image */
+.image-left {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #003049;
+  border-radius: 50%;
 }
 
 /* Portfolio Section Styles */
@@ -68,33 +71,14 @@ h4 {
   text-align: center;
 }
 
-article {
+article.portfolio-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-article div {
+article.portfolio-row div {
   text-align: center;
   margin: 20px;
-}
-
-.project-description {
-  font-size: 14px;
-}
-
-/* Additional Styles */
-nav {
-  text-align: center;
-  background-color: #003049;
-  padding: 10px 0;
-}
-
-nav a {
-  color: white;
-  padding: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  width: 30%;
 }
