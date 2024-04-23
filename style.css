@@ -1,4 +1,4 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. */
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line. */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
@@ -17,23 +17,65 @@ a:hover {
   color: #f77f00;
 }
 
-/* Header and Footer Styles */
-header, footer {
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003049;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* About Section Styles */
+#About {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-circle {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border: 2px solid #003049; /* Border color */
+  border-radius: 50%; /* Make the image completely round */
+}
+
+.about-text {
+  flex: 1; /* Allow text to take remaining space */
+  padding-left: 20px; /* Add spacing between image and text */
+}
+
+/* Portfolio Section Styles */
+#Portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project {
+  width: calc(33.33% - 40px); /* Adjust width and spacing as needed */
+  margin: 20px;
   text-align: center;
 }
 
-header {
-  background-color: #003049;
-  color: white;
-  padding: 10px 0;
+.project img {
+  width: 100%; /* Make images fill their container */
 }
 
-h1 {
-  font-size: 2em;
-  text-align: left;
-  margin-left: 20px;
+.project-description {
+  font-size: 14px;
 }
 
+/* Additional Styles */
 nav {
   text-align: center;
   background-color: #003049;
@@ -47,38 +89,4 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-/* About Section Styles */
-#About {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.image-left {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #003049;
-  border-radius: 50%;
-}
-
-/* Portfolio Section Styles */
-h4 {
-  font-size: 1.8em;
-  text-align: center;
-}
-
-article.portfolio-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-article.portfolio-row div {
-  text-align: center;
-  margin: 20px;
-  width: 30%;
 }
