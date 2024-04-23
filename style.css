@@ -1,4 +1,4 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line. */
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
@@ -17,19 +17,14 @@ a:hover {
   color: #f77f00;
 }
 
-/* Header and Footer Styles */
-header, footer {
-  text-align: center;
-}
-
-/* Redesigned Header */
+/* Header Styles */
 header {
   background-color: #003049;
   color: white;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between; /* Horizontally align the logo text and navigation */
-  align-items: center; /* Vertically center content */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-text {
@@ -38,10 +33,18 @@ header {
 
 nav {
   display: flex;
-  gap: 20px;
 }
 
-/* Updated About Section Styles */
+nav a {
+  color: white;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section Styles */
 #About {
   display: flex;
   flex-direction: column;
@@ -56,42 +59,28 @@ nav {
   border: 2px solid #003049; /* Border color */
   border-radius: 50%; /* Make the image completely round */
   display: block;
-  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 10px; /* Add margin below the image */
 }
 
-/* Redesigned Portfolio Section Styles */
+/* Portfolio Section Styles */
 h4 {
   font-size: 1.8em;
   text-align: center;
 }
 
-#portfolio {
+article {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Center items with space around them */
-  gap: 20px; /* Add spacing between items */
+  justify-content: center;
 }
 
-#portfolio section {
-  flex: 0 0 calc(33.33% - 40px); /* Adjusted to fit three items in a row with spacing */
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-sizing: border-box; /* Include padding in width calculation */
-  text-align: center; /* Center text within sections */
-}
-
-#portfolio h3 {
-  font-size: 1.2em;
-}
-
-#portfolio p {
-  font-size: 14px; /* Set project descriptions font size to 14px */
-}
-
-/* Contact Section Styles */
-h5 {
-  font-size: 1.5em;
+article div {
   text-align: center;
+  margin: 20px;
+}
+
+.project-description {
+  font-size: 14px;
 }
 
 /* Additional Styles */
