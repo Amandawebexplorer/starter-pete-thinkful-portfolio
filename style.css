@@ -17,27 +17,40 @@ a:hover {
   color: #f77f00;
 }
 
-/* Header Styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #003049;
-  color: white;
-  padding: 10px 20px;
-}
-
-.logo-text {
-  font-size: 1.5em;
-  font-weight: bold;
+/* Header and Footer Styles */
+header, footer {
+  text-align: center;
 }
 
 /* About Section Styles */
+header {
+  background-color: #003049;
+  color: white;
+  padding: 10px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Updated About Section Styles */
 #About {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the content */
+  text-align: center; /* Horizontally center text within sections */
   padding: 20px;
 }
 
@@ -46,33 +59,52 @@ header {
   height: 100px; /* Adjust the height as needed */
   border: 2px solid #003049; /* Border color */
   border-radius: 50%; /* Make the image completely round */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
-.about-text {
-  flex: 1; /* Allow text to take remaining space */
-  padding-left: 20px; /* Add spacing between image and text */
+#About h1 {
+  font-size: 2.5em; /* Larger font size for About heading */
+}
+
+#About h2 {
+  font-size: 2em; /* Smaller font size for Hi! I'm Pete Thinkful heading */
+}
+
+#About h3 {
+  font-size: 1.8em; /* Smaller font size for Pete's Background heading */
 }
 
 /* Portfolio Section Styles */
-#Portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.project {
-  width: calc(33.33% - 40px); /* Adjust width and spacing as needed */
-  margin: 20px;
+h4 {
+  font-size: 2em;
   text-align: center;
 }
 
-.project img {
-  width: 100%; /* Make images fill their container */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.project-description {
-  font-size: 14px;
+article div {
+  text-align: center;
+  margin: 20px;
+}
+
+article div p {
+  font-size: 1.2em; /* Project name font size */
+}
+
+article div img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contact Section Styles */
+h5 {
+  font-size: 2em;
+  text-align: center;
 }
 
 /* Additional Styles */
