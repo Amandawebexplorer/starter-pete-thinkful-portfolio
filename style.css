@@ -71,11 +71,10 @@ main {
 }
 
 .image-circle {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #003049;
-  border-radius: 50%;
-  display: block;
+  width: 200px; /* Increased width for larger images */
+  height: 200px; /* Adjust height to maintain aspect ratio */
+  border-radius: 50%; /* Make images circular */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire circle */
   margin: 20px auto;
 }
 
@@ -96,7 +95,8 @@ article div p {
 }
 
 article div img {
-  width: 120px; /* Set a larger fixed width for the images */
+  width: 240px; /* Increased width for portfolio images */
+  height: 180px; /* Adjust height to maintain aspect ratio */
   display: block;
   margin: 0 auto;
 }
